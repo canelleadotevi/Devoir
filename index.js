@@ -22,6 +22,9 @@ if(button ) {
        //je faisais required au niveau du champ input mais ça ne prenais pas j'ai donc mis le if pour vérifier si les champs ne sont pas vide
        if(p_name !='' && u_price != '' && q_total != ''){
         tab.push(product)
+        JSON.stringify(tab)
+        JSON.parse(localStorage.setItem(tab))
+        JSON.parse(localStorage.getItem(product))
      /*  localStorage.set(tab) */
 
        }
